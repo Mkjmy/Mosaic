@@ -1,0 +1,102 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: #2d2d2d;
+  border: 1px solid #3d3d3d;
+  min-width: 400px;
+  max-width: 500px;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #3d3d3d;
+  border-bottom: 1px solid #4d4d4d;
+}
+
+.dialog-header h3 {
+  font-size: 11px;
+  color: #b3b3b3;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.dialog-close {
+  background: transparent;
+  border: none;
+  color: #808080;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.dialog-close:hover {
+  color: #ff4d4d;
+}
+
+.dialog-content {
+  padding: 12px;
+}
+
+.dialog-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #3d3d3d;
+  border: 1px solid #4d4d4d;
+  margin-bottom: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.dialog-option:hover {
+  background: #4d4d4d;
+  border-color: #5d5d5d;
+}
+
+.dialog-option:last-child {
+  margin-bottom: 0;
+}
+
+.dialog-option-icon {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d2d;
+  border: 1px solid #4d4d4d;
+}
+
+.dialog-option-text {
+  flex: 1;
+}
+
+.dialog-option-title {
+  font-size: 11px;
+  color: #b3b3b3;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+.dialog-option-desc {
+  font-size: 9px;
+  color: #606060;
+}

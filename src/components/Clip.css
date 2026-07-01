@@ -1,0 +1,94 @@
+.clip {
+  position: absolute;
+  top: 4px;
+  height: calc(100% - 8px);
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #3d3d3d;
+}
+
+.clip:hover {
+  border-color: #5d5d5d;
+}
+
+.clip.selected {
+  border-color: #ff764d;
+  background: #3a2a2a !important;
+}
+
+.clip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 14px;
+}
+
+.clip-name {
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.clip-close {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+  cursor: pointer;
+  padding: 0 2px;
+}
+
+.clip-close:hover {
+  color: #ff4d4d;
+}
+
+.clip-edit-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+  cursor: pointer;
+  padding: 0 4px;
+  margin-right: 4px;
+}
+
+.clip-edit-btn:hover {
+  color: #b3b3b3;
+}
+
+.clip-pattern {
+  display: flex;
+  padding: 2px;
+  gap: 1px;
+  height: calc(100% - 14px);
+  overflow-x: auto;
+}
+
+.clip-step {
+  flex: 1;
+  min-width: 8px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.clip-step:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.clip-step.active {
+  background: #ff764d;
+  border-color: #ff964d;
+}
+
+.clip-step.active .note-label {
+  color: white;
+  font-size: 6px;
+  font-weight: normal;
+}
